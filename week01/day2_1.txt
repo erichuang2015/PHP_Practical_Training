@@ -1,0 +1,80 @@
+1. PHP 数据类型
+
+int            整数
+float          浮点数
+char           字符型
+string         字符串
+boolean        布尔类型
+array          数组
+resource       资源
+object         对象
+null   
+
+2. 可变变量
+$name = "wcs";
+$wcs = "who";
+$who = "hacker";
+echo $$$name;
+
+3. 整数  int 
+10 进制  $a = 250;  var_dump($a);
+8  进制  $b = 077;  var_dump($b); //被转化成整形输出
+16 进制  $c = 0xff;  var_dump($c);
+2  进制  $d = 0b1010;  var_dump($d);
+
+4. 布尔类型  boolean
+true  or false   vardump((bool)$status);
+true  =======> 100  -100  1.9   -1.9    ' '    '0.0000000000'  "hello world"
+false =======> 0    -0    0.00   -0.00   ''    '0'              null 
+
+5. 字符串  string
+    $str1 = 'hacker'; 
+    echo $str1;
+    $str2 = "hacker";
+    echo $str2;
+
+" " 和 ' '的区别
+a. 解析变量的能力
+    $str3 = 'whoami$str1';    //无法解析变量
+    $str4 = "whoami{$str1}";    //可以解析变量 "whoami${str1}"
+    // 单引号内直接用双引号
+b. 转义字符的能力
+    $str5 = '\\hacker \'is\' hacker';          //单引号只能转义单引号 和 转义字符\
+    $str5 = "hacker \"is\" hacker\r\t";        //双引号转义双引号 和 转义字符\  \r \t \n
+    // 双引号内直接用单引号
+c. sql 用双引号 , 单引号效率更高
+
+. 连接符
+
+6. 循环结构
+
+    for($i = 0; $i < 10; $i++){
+
+    }
+
+    $i = 0;
+    while($i < 10){
+        $i++;
+    }
+
+    $i = 0;
+    do{
+        $i++;
+    }while($i < 10);
+    
+    $b = array(
+        'a' => 'Tom',
+        'b' => 'Mary'
+    );
+    foreach($b as $key => $value){
+        echo "<br/>".$key.":".$value."<br/>";
+    }
+
+    实例： 
+    表格实现
+    9 * 9 乘法表实现
+    
+
+
+    
+
