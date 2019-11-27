@@ -1,0 +1,111 @@
+1. 复习 HTML 标签 W3C文档
+a: 超链接     
+    锚点eg
+    id="name" <a href="#name"></a>
+
+ul:li 无序列表
+ol:li 有序列表
+
+img:  图片  src alt width height
+    路径问题 相对路径和绝对路径
+    ./ 与 ../ 
+    上线===>绝对路径  开发===>相对路径
+    等比例缩放问题  不要同时设置宽和高
+
+
+div:  无意义块标签
+span: 无意义行内元素
+
+表单:
+form:input
+form
+    action="xxx.php" method="post or get"
+input
+    type 属性的类型
+    type="text" 文本框
+    type="password" 密码框
+    type="checkbox" 多选框 name要一致，写成name[]
+    type="radio"    单选框 name要一致，写成name
+    type="submit" //使用图片代替提交按钮    type="image" src=""
+    //button 放在form里面用来提交表单
+    type="file" name="pic" 上传文件
+    type="color" //HTML5 新增的颜色选择器
+    type="date" //HTML5 新增的日期选择
+    
+    placeholder="" //提醒信息
+    disabled //禁用状态
+    required //必须填写
+
+下拉菜单
+<select name="">
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+    <option value=""></option>
+</select>
+
+表单分组
+<fieldset>
+    <legend>分组名称</legend>
+    <input>
+    <input>
+</fieldset>
+
+<label for="name">
+<input id="name">
+
+
+表格: 一般用在后台的管理系统 or 图片栏目
+table:tr:th:td
+    table 的属性 
+        border="1" width="400"
+        align="center"  left center right
+        cellspacing  //单元格之间的距离
+        cellpadding  //内容到单元格边框的距离
+        bgcolor/background  //背景颜色
+        
+    tr 的属性
+        align="center"
+        没有width，width是td设置的
+        bgcolor/background //背景颜色
+    td 的属性
+        width 改变会导致一整列
+        bgcolor/background //背景颜色
+    
+    行合并 
+    rowspan="2" 去掉下边的tr的td
+    列合并
+    colspan="2" 去掉本行tr的后边的td
+
+caption 表格标题
+<caption></caption>
+
+
+字体标签
+font  属性 size color
+
+center  HTML5被舍弃
+
+颜色的表示方式
+a. 英文单词
+b. 十六进制 6位十六进制 #1F5B8D
+c. rgb(12,16,33)   
+d. rgba(12,16,33,0.5)  a: 透明度 0-1   0===>完全透明
+
+多媒体标签 视频和音频 游戏用的比较多
+    视频
+    <video src="" controls></video>
+        controls 控件
+        autoplay 自动播放
+        width、height
+        loop 循环播放
+        poster 封面
+    音频
+    <audio src=""></audio>
+        controls 控件
+        autoplay 自动播放
+        width、height
+        loop 循环播放
+
+
+
