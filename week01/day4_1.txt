@@ -1,0 +1,60 @@
+## CSS的复习 ##
+
+0. 
+font的字体最大只能是 7
+1em = 16px  1em = 1个汉字大小 
+em 它是一个相对单位，相对父元素
+rem 它是一个相对单位，相对网页根元素
+CSS 命名规范
+
+1.CSS 的书写方式 
+a.内联样式/行内样式
+<p style="color:red"></p>
+b.内部样式
+<style>
+//样式
+</style>
+c.外部样式
+xxx.CSS
+<link rel="stylesheet" src="xxx.css"></link>
+
+2.样式的优先级
+行间样式 > 内部样式 == 外部样式 看先后
+
+3.选择器
+a.基本选择器
+    ID选择器    ID是唯一的，标签只有一个ID
+    类选择器    标签可以通过空格分隔设置多个类选择器
+    标签选择器  
+    通配符
+b.后代选择器
+c.伪类选择器
+    a:link{
+        //没有被访问
+    }
+    a:visited{
+        //访问过后
+    }
+    a:hover{
+        //鼠标移入
+    }
+    a:active{
+        //鼠标左键按下去没有松开
+    }
+
+
+d.属性选择器
+
+4.字体属性
+    p{
+        color:red;
+        font-size:24px;//可以百分比
+        font-weight:bold;//取值100|200|300|400|500|600|700|800|900
+        font-family:;  //计算机有该字体样式 
+    }
+
+5. 文本属性
+    text-align: left|center|center;    //水平居中 
+    height line-height 设置一样         //垂直居中
+    text-decoration: underline;        //下划线
+
