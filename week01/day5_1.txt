@@ -1,0 +1,14 @@
+1.盒子模型
+    margin嵌套
+        普通文档流，父元素没有padding和实际边框的时候，子元素的margin-top不生效
+        解决方法：
+        a.给父元素加 padding:1px;
+        b.给父元素加边框 border:1px;
+        c.给父元素加上 overflow:hidden    效果最好
+    浏览器默认
+        magrin:15px;
+    元素居中
+        a.元素定宽
+        b.margin:0 auto;
+2.浮点
+3.定位

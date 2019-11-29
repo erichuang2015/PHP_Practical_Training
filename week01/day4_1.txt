@@ -27,7 +27,15 @@ a.基本选择器
     类选择器    标签可以通过空格分隔设置多个类选择器
     标签选择器  
     通配符
+
+    基本选择器的优先级
+    ID选择器 > 类选择器 > 标签选择器 > 通配符
+    100       10         1           0
 b.后代选择器
+    E   F      E元素后边的所有后代元素，包括儿子元素、孙子元素
+    E > F      E元素后边的儿子元素
+    E + F      E元素和F元素是同级 E元素后边的第一个元素
+    E ~ F      E元素和F元素是同级 E元素后边的所有兄弟元素
 c.伪类选择器
     a:link{
         //没有被访问
@@ -41,8 +49,12 @@ c.伪类选择器
     a:active{
         //鼠标左键按下去没有松开
     }
-
-
+    xx:first-child
+    xx:last-child
+    xx:only-child
+    xx:nth-child(xxx)    xxx为第几行
+    xx:nth-child(2n+1) xx:nth-child(even)
+    xx:nth-child(2n) xx:nth-child(odd)
 d.属性选择器
 
 4.字体属性
