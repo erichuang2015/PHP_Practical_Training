@@ -52,7 +52,7 @@ c.伪类选择器
     xx:first-child
     xx:last-child
     xx:only-child
-    xx:nth-child(xxx)    xxx为第几行
+    xx:nth-child(xxx)    xxx为第几个
     xx:nth-child(2n+1) xx:nth-child(even)
     xx:nth-child(2n) xx:nth-child(odd)
 d.属性选择器

@@ -1,0 +1,49 @@
+0.
+   img互靠小间隙     加浮动或则裹着div
+
+   inline-block 和后续文字<span></span>
+   display: inline-block;
+   vertical-align:bottom;
+
+1. 背景
+    background-image:url();
+    background-color:;
+    background-repeat:repeat-x/repeat-y/no-repeat;
+    background-size:100% 100% / cover
+    background-position: left/right/center top/bottom/center 
+                        xxx px            xxx px
+                        xx%              xx%
+    页面上使用background-position 来实现精灵图和雪碧图，减少请求数据次数，提高网页加载速度；减少图片命名；方便更换图标风格；必须要限制元素的大小
+    [阿里矢量图](https://www.iconfont.cn/)
+
+    简写
+    background: #ccc url() no-repeat 10px 10px;//偏移位置 顺序不固定
+
+    opacity:0-1; //透明属性
+
+2.边框
+
+3.阴影
+box-shadow: x,y,模糊程度,半径大小,颜色;x,y,模糊程度,半径大小,颜色;
+text-shadow: x,y,模糊程度,半径大小,颜色;x,y,模糊程度,半径大小,颜色;
+
+4.浮动
+    a.普通文档流
+    b.浮动流
+        浮动后不占用原来的物理位置，脱离文档流
+        浮动后会改变元素的层级
+
+        浮动后父元素高度坍塌，导致影响后续布局              
+            1.为父元素设置高度
+            2.使用空的div来清除浮动
+            3.
+            .wrap:after{
+                content:"";
+                display：block;/*强制转块级*/
+                clear:both;
+                zoom:1;/*解决IE的兼容性问题*/
+            }
+            
+    c.定位流
+
+
