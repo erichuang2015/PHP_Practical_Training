@@ -1,0 +1,80 @@
+0. 目录结构
+
+    ----image
+    |    |----banner.jpg
+    ----css
+    |    |----index.css
+    ----js
+    |
+    ----public
+    |
+    ----index.html
+
+1. 网页小图标 
+    <link rel="stylesheet" src="./image/favicon.jpg">
+    <link rel="shortcut icon" src="./image/favicon.ico">
+
+2.  index.css 文件
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    .header{
+        width:100%;
+        height:; /*定高*/
+        background:url('../image/banner.jpg);
+        position:relative;     
+    }
+    .body{
+        width:100%;
+        height:; /*不定高*/
+    }
+    .footer{
+        width:100%;
+        height:; /*定高*/
+    }
+    .header-nav{
+        /*实现居中*/
+        width:80%;
+        margin:0 auto;
+        position:relative;
+    }
+    .nav-logo{
+        background:url('../image/logo.jpg');
+        /*设置成背景大小*/
+        width:;
+        height:;
+    }
+3. index.html
+    /*头部*/
+    <div class="header">
+        /*导航条*/
+        <div class="header-nav">
+            /*导航logo*/
+            <div class="nav-logo"></div>
+            /*菜单*/
+            </div class="nav-menu">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+            /*导航条右侧*/
+            <div class="nav-right"></div>
+        </div>
+        /*轮播图*/
+        /*轮播居中且绝对定位的解决问题*/
+        /*外层100%宽度且绝对定位*/
+        /*内层margin 加宽度进行居中*/
+        <div class="header-lubo">
+            <div class=lubo-kongjian">
+            </div>
+        </div>
+    </div>
+    /*网页主体*/
+    <div class="body">
+    </div>
+    /*网页底部*/
+    <div class="footer">
+    </div>
+
