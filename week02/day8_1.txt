@@ -1,4 +1,4 @@
-0. 目录结构
+﻿0. 目录结构
 
     ----image
     |    |----banner.jpg
@@ -11,8 +11,8 @@
     ----index.html
 
 1. 网页小图标 
-    <link rel="stylesheet" src="./image/favicon.jpg">
-    <link rel="shortcut icon" src="./image/favicon.ico">
+    <link rel="stylesheet" href="./image/favicon.jpg">
+    <link rel="shortcut icon" href="./image/favicon.ico">
 
 2.  index.css 文件
     *{
