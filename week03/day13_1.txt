@@ -1,0 +1,57 @@
+## CSS3 新增属性 ##
+0. 考虑浏览器的前缀
+    谷歌 -webkit-
+    火狐 -moz-
+    IE  -ms-
+    欧朋 -o-
+1. 过渡
+    单个属性
+    xxx{
+        transition：参与过渡的属性 持续时间 过渡的动画类型 过渡延迟时间;
+    }
+    /*过渡的触发时机hover*/
+    xxx:hover{
+        参与的属性：值;
+    }
+    多个属性参与
+    xxx{
+        transition：参与过渡的属性 持续时间 过渡的动画类型 过渡延迟时间,参与过渡的属性 持续时间 过渡的动画类型 过渡延迟时间;
+    }
+    xxx{
+        transition：all 持续时间 过渡的动画类型 过渡延迟时间;//设置所有的属性都过渡
+    }
+    /*过渡的触发时机hover*/
+    xxx:hover{
+        参与的属性：值;
+        参与的属性：值;
+    }
+
+    自定义过渡效果
+    clube-bezier();
+
+2. 动画
+    animation: 动画名称 动画时长 动画运动类型 动画次数 infinite 延迟时间
+    定义动画
+    animation: demo 5s linear 2 2s
+    执行动画
+    @keyframes demo{
+        from{
+            margin-left:0px;
+        }
+        to{
+            margin-right:500px;
+        }
+        /*使用百分比执行动画 更加灵活*/
+        0%{}
+        50%{}
+        100%{}
+    }
+    //动画反向交替
+    animation-direction: alternate;
+    //线性和非线性运动
+    非线性
+    steps(xx,start); //参数一 把动画分成几帧
+    steps(xx.end);
+
+
+    
