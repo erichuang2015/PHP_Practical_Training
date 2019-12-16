@@ -1,0 +1,55 @@
+### PHP 面向对象 OOP ###
+1. 声明类、继承、封装、魔术方法
+namespace  namespace_name;
+class ClassName extends BaseClassName
+{
+   //属性
+   [modifiers] $propertyName = initValue;
+
+   //伪变量 $this 代表当前类的对象
+
+   //构造方法
+   [modifiers] function __construct()
+   {
+
+   }
+
+   //析构方法
+   [modifiers] function __destruct()
+   {
+
+   }
+   //
+   __set($key,$value)
+   {
+      $this->key = $value;
+   }
+   //
+   __get($key)
+   {
+      return $this->value;
+   }
+   //方法
+   [modifiers] function functionName()
+   {
+      
+   }
+}
+
+$obj = new ClassName();
+obj -> propertyName;
+obj -> functionName();
+
+2. 面向对象的三个特性 
+   继承、 封装、 多态
+
+   子类继承父类，可以使用父类的属性和方法，私有属性和方法不能被继承
+   
+
+
+   好处：
+      a. 代码重用性
+      b. 可拓展性
+      c. 可维护性
+
+3. 设计模式、MVC设计模式
