@@ -37,7 +37,7 @@ class ClassName extends BaseClassName
 }
 
 $obj = new ClassName();
-obj -> propertyName;
+obj -> $propertyName;
 obj -> functionName();
 
 2. 面向对象的三个特性 
@@ -49,13 +49,24 @@ obj -> functionName();
    子类构造方法里面调用父类的构造方法，正确给父类属性赋值
    parent::__construct(); 
 
-
    好处：
       a. 代码重用性
       b. 可拓展性
       c. 可维护性
 
-3. 设计模式、MVC设计模式
+
+3. final 最终的 最后的 可以修饰方法和属性
+   final不能修饰属性
+   final类---不可被继承。
+   final方法---不可被覆盖。
+
+4. static 
+   类名::$name/类名::name()
+   self::$name/self::name()  //self 代表当前类
+
+5. 设计模式、MVC设计模式
+   a.单例设计模式
 
 
-4. 完成对数据库操作的封装，详细见代码
+6. 完成对数据库操作的封装，详细见代码
+
