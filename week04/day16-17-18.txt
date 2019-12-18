@@ -25,9 +25,9 @@ class ClassName extends BaseClassName
       $this->key = $value;
    }
    //
-   __get($key)
+   __get($name)
    {
-      return $this->value;
+      return $this->name;
    }
    //方法
    [modifiers] function functionName()
