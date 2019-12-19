@@ -1,0 +1,33 @@
+1. 自动加载机制
+
+2. 命名空间
+    2.1 定义命令空间，前面不能有任何输出
+    2.2 命名空间不起作用：
+        a. 变量
+        b. define定义的常量
+    2.3 命名空间起作用：
+        a. const起作用
+        b. 类
+        c. 函数
+
+3. 命名空间的调用
+    namespace father;
+        function test()
+        {
+
+        }
+        son\test();  // 调用子命名空间 限定名称 
+    namespace father\son;
+        function test()
+        {
+            
+        }
+        \my\test();  // 父命名空间   完全限定名称
+        \my\son\test(); // 子命名空间 
+        test();   // 子命名空间   非限定名称
+
+    use \xxx\xxx\xxx\A as B;
+    $a = new A();
+    $b = new B();
+    
+    
